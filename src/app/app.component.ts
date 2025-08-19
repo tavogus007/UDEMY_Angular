@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { AgregarTareaComponent } from './agregar-tarea/agregar-tarea.component';
+import { ComponenteForComponent } from './componente-for/componente-for.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [AgregarTareaComponent],
+  imports: [ComponenteForComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Local reference in Angular';
+  title = 'Directiva @for en Angular';
 }
