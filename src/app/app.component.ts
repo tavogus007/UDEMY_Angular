@@ -1,15 +1,12 @@
 import { Component } from '@angular/core';
-import { CalculadoraComponent } from './calculadora/calculadora.component';
-
+import { ComponenteIfComponent } from './componente-if/componente-if.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    CalculadoraComponent,
-  ],
+  imports: [ComponenteIfComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Aplicación Calculadora';
+  title = 'Directiva @if en Angular';
 }
