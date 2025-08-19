@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { ComponenteIfComponent } from './componente-if/componente-if.component';
+import { AgregarTareaComponent } from './agregar-tarea/agregar-tarea.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ComponenteIfComponent],
+  imports: [AgregarTareaComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Directiva @if en Angular';
+  title = 'Local reference in Angular';
 }
