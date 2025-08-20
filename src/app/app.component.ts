@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { ComponenteForComponent } from './componente-for/componente-for.component';
+import { RetoSec5Component } from "./reto-sec5/reto-sec5.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ComponenteForComponent],
+  imports: [ RetoSec5Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Directiva @for en Angular';
+  title = 'Tienda Online';
 }

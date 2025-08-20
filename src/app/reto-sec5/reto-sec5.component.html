@@ -1,0 +1,22 @@
+<div class="text-center mt-5">
+  <div class="text-center">
+    <h1 class="text-center text-alert">{{ titulo_r }}</h1>
+
+    <div class="text-center mt-5">
+      <ul class="list-group w-50 mx-auto">
+        @for (producto of productos; track producto; let i = $index) {
+        <li class="list-group-item text-center">
+          {{ producto }} ; ${{ precios[i] }}
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+  <div class="mt-3 mx-auto w-50 d-flex justify-content-center">
+    <input type="text" #productoDescripcion placeholder="Decripcion del producto" class="mx-2">
+    <input type="number" #productoPrecio placeholder = 0 class="mx-2">
+    <button class="btn btn-primary" (click)="registraProducto(productoDescripcion.value); 
+            registraPrecio(+productoPrecio.value); productoDescripcion.value = ''; productoPrecio.value = ''
+            ">Registrar</button>
+  </div>
+</div>
