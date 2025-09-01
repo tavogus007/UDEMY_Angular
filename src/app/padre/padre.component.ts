@@ -9,5 +9,11 @@ import { HijoComponent } from './hijo/hijo.component';
   styleUrl: './padre.component.css'
 })
 export class PadreComponent {
-  mensajePadre: string = "Mensaje desde el componente PADRE";
+  mensaje: string = "";
+
+  //Se emitio una cadena, es lo que se recibe del componente hijo
+  recibirNotificacion(mensaje: string){
+    this.mensaje = mensaje;
+  }
+
 }

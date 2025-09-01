@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-hijo',
@@ -8,6 +8,10 @@ import { Component, Input } from '@angular/core';
   styleUrl: './hijo.component.css',
 })
 export class HijoComponent {
-  //Esto significa ! => "No nulo (non-null)", significa que este operador o variable en este vaso, se va a inicializar posteriormente
-  @Input() mensaje!: string; //recibira informacion del compnente padre)
+  @Output() notificarPadre = new EventEmitter<string>();
+
+  enviarMensaje(){
+    //Emitir el evento con un mensaje
+    this.notificarPadre.emit("Mensaje desde el componente HIJO al PADRE");
+  }
 }
