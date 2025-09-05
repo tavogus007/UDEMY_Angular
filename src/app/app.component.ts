@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RetoSec5Component } from "./reto-sec5/reto-sec5.component";
-import { PadreComponent } from './padre/padre.component';
+import { HijoComponent } from './reto-sec6/hijo/hijo.component';
+import { RetoSec6Component } from "./reto-sec6/reto-sec6.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ PadreComponent],
+  imports: [HijoComponent, RetoSec6Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Decorador @Input';
+  title = 'Reto sec 6, calculadora';
 }
