@@ -2,9 +2,10 @@
     <div class="justify-content-center mt-3">        
 
         <app-hijo (resultado)="sumaRecibida($event)"/>
+        <app-resultado [ressultadoHijo] = res_padre/>
     
     <div class="mt-3">
-        <p>Resultado: {{res}}</p>
+        
     </div>
     
 
