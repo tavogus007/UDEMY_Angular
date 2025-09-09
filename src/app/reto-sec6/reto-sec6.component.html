@@ -1,12 +1,5 @@
 <div class="container">
-    <div class="justify-content-center mt-3">        
-
-        <app-hijo (resultado)="sumaRecibida($event)"/>
-        <app-resultado [ressultadoHijo] = res_padre/>
-    
-    <div class="mt-3">
-        
-    </div>
-    
-
+    <h3 class="text-primary">Componente Padre</h3>
+    <app-hijo/>
+    <button class="btn btn-primary mt-3" (click)="cambiarMensajeHijo()">Cambiar mensaje del Hijo</button>
 </div>

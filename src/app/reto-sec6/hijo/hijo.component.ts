@@ -9,13 +9,9 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './hijo.component.css'
 })
 export class HijoComponent {
-  @Output() resultado = new EventEmitter<number>();
+  mensaje: string = "Mensaje desde el componente hijo";
 
-  operadorA :number = 0;
-  operadorB: number = 0;
-  // resultado: number = 0;
-
-  sumar(){
-    this.resultado.emit(this.operadorA + this.operadorB);
+  cambiarMensaje(nuevoMensaje: string){
+    this.mensaje = nuevoMensaje
   }
 }
