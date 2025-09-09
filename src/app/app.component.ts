@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { HijoComponent } from './reto-sec6/hijo/hijo.component';
-import { RetoSec6Component } from "./reto-sec6/reto-sec6.component";
+import { ViewChildComponent } from './view-child/view-child.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HijoComponent, RetoSec6Component],
+  imports: [ViewChildComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Reto sec 6, calculadora';
+  title = 'decorador @ViewChild en Angular';
 }
